@@ -7,23 +7,24 @@ public class Probem1_11 {
 
         int current_population = 312032486;
 
-        int second_in_one_year = 60 * 60 * 24 * 365;
+        double second_in_one_year = 60 * 60 * 24 * 365;
 
-        int total_birth_in_one_year = second_in_one_year / 7;
-        int total_death_in_one_year = second_in_one_year / 13;
-        int total_migrant_in_one_year = second_in_one_year / 45;
+        double total_birth_in_one_year = second_in_one_year / 7.0;
+        double total_death_in_one_year = second_in_one_year / 13.0;
+        double total_migrant_in_one_year = second_in_one_year / 45.0;
 
-        int first_year_population = (current_population + total_birth_in_one_year + total_migrant_in_one_year) - total_death_in_one_year;
-        int second_year_population = (first_year_population + total_birth_in_one_year + total_migrant_in_one_year) - total_death_in_one_year;
-        int third_year_population = (second_year_population + total_birth_in_one_year + total_migrant_in_one_year) - total_death_in_one_year;
-        int fourth_year_population = (third_year_population + total_birth_in_one_year + total_migrant_in_one_year) - total_death_in_one_year;
-        int fifth_year_populaiton = (fourth_year_population+ total_birth_in_one_year + total_migrant_in_one_year) - total_death_in_one_year;
 
-        System.out.println( " 1st year is "+ first_year_population + " people.");
-        System.out.println( " 1st year is "+ second_in_one_year + " people.");
-        System.out.println( " 1st year is "+ third_year_population + " people.");
-        System.out.println( " 1st year is "+ fourth_year_population + " people.");
-        System.out.println( " 1st year is "+ fifth_year_populaiton + " people.");
+        double first_year_population = (current_population + total_birth_in_one_year + total_migrant_in_one_year) - total_death_in_one_year;
+        double second_year_population = (first_year_population + total_birth_in_one_year + total_migrant_in_one_year) - total_death_in_one_year;
+        double third_year_population = (second_year_population + total_birth_in_one_year + total_migrant_in_one_year) - total_death_in_one_year;
+        double fourth_year_population = (third_year_population + total_birth_in_one_year + total_migrant_in_one_year) - total_death_in_one_year;
+        double fifth_year_populaiton = (fourth_year_population+ total_birth_in_one_year + total_migrant_in_one_year) - total_death_in_one_year;
+
+        System.out.printf( " 1st year is %.0f people.\n", first_year_population);
+        System.out.printf( " 2nd year is %.0f people.\n", second_in_one_year );
+        System.out.printf( " 3th year is %.0f people.\n", third_year_population );
+        System.out.printf( " 4th year is %.0f people.\n", fourth_year_population );
+        System.out.printf( " 5th year is %.0f people.\n", fifth_year_populaiton );
 
 
 

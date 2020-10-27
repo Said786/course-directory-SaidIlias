@@ -29,6 +29,9 @@ public class Problem05 {
                 break;
 
             case 2:
+
+               // days = year % 4 == 0 && year % 100 != 0 || year % 400 == 0 ? 29 : 28;
+
                 if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0 ){
                     days = 29;
                 }else {

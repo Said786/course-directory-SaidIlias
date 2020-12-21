@@ -27,7 +27,7 @@ public class Problem03 extends PApplet {
 
         float angelStep = TWO_PI / rayCount;
 
-        float prevEndX = x + cos(angel - angelStep) * radius1;
+        float prevEndX =  x + cos(angel - angelStep) * radius1;
         float prevEndY = y + sin(angel - angelStep) * radius1;
 
         for (int i = 0; i < rayCount; i++){
